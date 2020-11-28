@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "10.0"
@@ -80,7 +80,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/cherk201/ZHPlayer.git", :tag => "#{spec.version}" }
 
-
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -89,8 +88,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "ZHPlayer/PlayerDemo/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "PlayerDemo", "ZHPlayer/PlayerDemo/*.{swift}"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
