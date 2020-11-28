@@ -11,11 +11,13 @@ spec.homepage     = "https://github.com/cherk201/ZHPlayer.git"
 spec.license      = "MIT"
 spec.author       = { "Arex" => "arex0207@aliyun.com" }
 # spec.platform     = :ios
-s.ios.deployment_target = "10.0"
+spec.ios.deployment_target = "10.0"
 
 spec.platform     = :ios, "10.0"
 spec.source       = { :git => "https://github.com/cherk201/ZHPlayer.git", :tag => "#{spec.version}" }
-spec.source_files = "VideoPlayer/**/*"
+spec.source_files = "PlayerDemo/*.{swift}"
+
+spec.swift_version = '5.3'
 
 spec.dependency "SnapKit", "~> 4.2.0"
 
